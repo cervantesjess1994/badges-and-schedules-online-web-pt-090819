@@ -18,13 +18,12 @@ def assign_rooms(speakers)
   assign
 end
 
-def printer(attendees)
-  badge= []
-  batch_badge_creator(attendees).each do |id|
-    badge.each<< id
+def printer(array)
+  batch_badge_creator(array).each do |id|
+    puts id
+  end 
+  
+  assign_rooms(array).each do |id|
+    puts id 
   end
-  new_badge=[]
-  assign_rooms(attendees).each do |id|
-    new_badge.each<< id
-  end
-end
+end 
