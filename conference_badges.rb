@@ -3,7 +3,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(array)
-      array.new
+      array=[]
       array.each do |name|
         array.push("Hello, my name is #{name}.")
     end
@@ -12,7 +12,7 @@ end
 
 def assign_rooms(speakers)
   assign= []
-  speakers.each_with_index{|speaker,index| assign.push("Hello #{speaker}, you'll be assigned to room #{index +1}!")}
+  speakers.each_with_index{|speaker,index| assign.push("Hello, #{speaker} you'll be assigned to room #{index+1}!")}
   assign
 end
 
@@ -23,4 +23,4 @@ def printer(array)
   assign_rooms(array).each do |badge|
     puts badge
   end
-end  
+end
