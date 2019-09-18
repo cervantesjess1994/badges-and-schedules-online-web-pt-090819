@@ -1,5 +1,3 @@
-people=["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"
-
 def badge_maker(name)
   return "Hello, my name is #{name}."
 end
@@ -25,4 +23,4 @@ end
   assign_rooms(attendees).each do |badge|
     puts badge
   end
-end 
+end
